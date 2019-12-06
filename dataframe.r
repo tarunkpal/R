@@ -2,7 +2,7 @@ data=read.csv("F:\Tarun\data.csv") #reading csv from local machine
 df=data.frame(data)
 print(df[1:5,])     #printing first 5 entries
 
-/creating new dataframe
+#creating new dataframe
 
 df2 <- data.frame(
   std_id=c(1:5)
@@ -11,10 +11,10 @@ df2 <- data.frame(
   class=c(7,7,7,8,8))
 
 
-/adding new column
+#adding new column
 
 df2$height <- c(147,150,150,153,145)               #height in cm
-write.csv(df2, filenmae="students.csv")             #writing dataframe in csv
+write.csv(df2, filename="students.csv")             #writing dataframe in csv
 
 ondat <- read.csv(url("http://samplecsvs.s3.amazonaws.com/SalesJan2009.csv"))    #reading csv from online source
 print(ondat[1:4,])                                                               #printing frist 4 entries
